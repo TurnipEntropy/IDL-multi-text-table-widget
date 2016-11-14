@@ -53,6 +53,21 @@ pro multi_text_box_example
     initial_text_values = initial_text_values, button = button
 end
 
+;+
+; :Description:
+;   Creates a widget that acts like a table widget, but offers more intuitive event handling.
+; :Params:
+;   title: title of widget, required
+;   xoffset: xoffset of widget, required
+;   yoffset: yoffset of widget, required
+;   num_text_boxes: the number of text boxes in the widget, required
+;   response_ptr: pointer supplied to hold the results of any changes, required
+;   text_box_titles: titles of rows and columns, optional
+;   num_rows: the number of rows in the table, optional
+;   num_cols: the number of columns in the table, optional
+;   inital_text_values: the initial values to display in the table, optional
+;   button: the button used to send an event to the event handler, optional
+;-
 pro create_multi_text_input_widget, title, xoffset, yoffset, num_text_boxes, response_ptr, $
   text_box_titles = text_box_titles, num_rows = num_rows, num_cols = num_cols, $
   initial_text_values = initial_text_values, button = button
